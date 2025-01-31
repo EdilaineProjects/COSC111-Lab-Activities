@@ -1,19 +1,25 @@
-Laboratory #3: Working with Sensors
+Laboratory Activity #3: Working with Sensors
 
-## Objectives:
-- Integrate these sensor components in an Arduino circuit
-- The objective of this project is to create a fire detection system using a temperature sensor and a photoresistor. The system monitors the temperature and brightness levels, and if both exceed predefined thresholds, it triggers an alert by blinking an LED.
-  
-## Instructions:
-- Using a NTC thermistor. Each thermistor has a normal resistance. In our case, it should be 10k ohms, which is measured under 25 degrees Celsius.
+## Description:
+This Arduino program monitors temperature and ambient light levels using a temperature sensor and a photoresistor. If the temperature exceeds a defined threshold and the brightness level is high, the system triggers a fire indication by blinking an LED rapidly. The program continuously reads sensor values, prints them to the serial monitor, and evaluates conditions to determine whether to activate the LED warning system.  
 
-## Sensors to be used in this activity
-- Potentiometer
-- Thermistor
-- Photoresistor
+## Objective:    
+- Detect temperature and brightness changes using sensors.  
+- Implement a fire detection system based on predefined thresholds.  
+- Utilize serial communication to display real-time sensor readings.  
+- Control an LED as a visual indicator for potential fire hazards.  
 
-How to Run
-1. Connect the temperature sensor, photoresistor, and LED to the specified pins on your microcontroller.
-2. Upload the code to your microcontroller.
-3. Open the serial monitor to view the temperature and brightness readings.
-4. The LED will blink if both the temperature and brightness exceed their respective thresholds, indicating a potential fire.
+## Instructions: 
+1. Connect a "emperature sensor to A0 and a photoresistor to A2 on the Arduino board.  
+2. Attach an LED to pin 12 with a suitable resistor.  
+3. Upload the code to the Arduino board using the Arduino IDE.  
+
+## How to Run: 
+1. Install the [Arduino IDE](https://www.arduino.cc/en/software) if not already installed.  
+2. Connect the Arduino board to your computer via USB.  
+3. Open the `.ino` file in the Arduino IDE.  
+4. Select the correct "board and port" under Tools > Board and Tools > Port.  
+5. Click "Upload" to compile and upload the code.  
+6. Open the "Serial Monitor (Ctrl + Shift + M)" to observe temperature and brightness readings.  
+7. If both temperature and brightness exceed the defined thresholds, the LED will blink rapidly to indicate potential fire detection.
+
