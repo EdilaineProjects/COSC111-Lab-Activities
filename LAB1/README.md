@@ -4,6 +4,7 @@ Laboratory Activity #1: Arduino circuit
 - The objective of this project is to create a sequential LED lighting system where LEDs turn on and off in a specific order. The system can be modified to control odd or even-numbered LEDs separately.
 
 ## Description: 
+This activity controls multiple LEDs connected to an Arduino, turning them on and off sequentially with a delay between each action. The system allows users to observe the LEDs being lit one by one, followed by turning them off in the same sequence.
 - LED Pins (ledPins[]): An array of pins to which the LEDs are connected.
 - Number of LEDs (numLeds): The total number of LEDs in the array.
 - Setup: Initializes each LED pin as an output.
